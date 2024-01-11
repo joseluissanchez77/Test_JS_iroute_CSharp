@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Test_JS_iroute_CSharp.props" />
+</Project>

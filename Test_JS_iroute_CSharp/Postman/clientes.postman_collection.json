@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "f805f241-66bf-4145-acf6-e4dcd8cf787d",
+		"name": "clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4138448",
+		"_collection_link": "https://www.postman.com/red-robot-601337/workspace/prueba-iroute/collection/4138448-f805f241-66bf-4145-acf6-e4dcd8cf787d?action=share&source=collection_link&creator=4138448"
+	},
+	"item": [
+		{
+			"name": "Listar clientes y buscar por identificacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5244/api/Client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5244",
+					"path": [
+						"api",
+						"Client"
+					],
+					"query": [
+						{
+							"key": "identificacion",
+							"value": "0931147287",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear un cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"primerNombre\": \"2Test\",\r\n    \"segundoNombre\": \"2Test\",\r\n    \"apellidos\": \"2Test\",\r\n    \"identificacion\": \"02222222222\",\r\n    \"correo\": \"2test@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5244/api/Client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5244",
+					"path": [
+						"api",
+						"Client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar un cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5244/api/Client/44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5244",
+					"path": [
+						"api",
+						"Client",
+						"44"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
